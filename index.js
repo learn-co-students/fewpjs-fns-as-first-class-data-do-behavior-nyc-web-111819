@@ -7,5 +7,21 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
-/* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
+ function greet(greetingString) {
+    const newGreeting = greetingString.split(':')[0]
+    const newGreetInt = parseInt(newGreeting)
+   
+    if (newGreetInt < 12)
+    return "Good Morning"
+    else if (newGreetInt < 17)
+    return "Good Afternoon"
+    else
+    return "Good Evening"
+ }
+
+
+function displayMessage(messageString){
+  const newMessage = document.getElementById('greeting')
+  newMessage.innerText = messageString
+}
+
